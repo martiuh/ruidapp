@@ -4,7 +4,6 @@ function App() {
   );
 
   function desactivateButton(ruidoButton) {
-    console.log(ruidoButton);
     ruidoButton.removeAttribute('disabled');
   }
 
@@ -14,13 +13,7 @@ function App() {
 
     audio.addEventListener('load', desactivateButton(ruidoButton));
 
-    function stopSong() {
-      audio.pause();
-      audio.currentTime = 0;
-    }
-
     ruidoButton.addEventListener('click', () => {
-      stopSong();
       audio.play();
     });
   });
