@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "open-cli http://localhost:1234 && nodemon server.js"
+    "dev": "NODE_ENV=dev open-cli http://localhost:1234 && nodemon server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
