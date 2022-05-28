@@ -1,6 +1,5 @@
 const app = require('express')();
 const cors = require('cors');
-const path = require('path');
 const helmet = require('helmet');
 const prerender = require('prerender-node');
 
@@ -8,7 +7,7 @@ app.use(cors());
 app.use(helmet());
 app.use(prerender);
 
-app.use((req, res) => {
+app.use((_, res, next) => {
   // Security
   res.setHeader('X-Frame-Options', 'sameorigin');
   res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -20,8 +19,14 @@ app.use((req, res) => {
     'camera=(), geolocation=(), microphone=()'
   );
 
-  res.setHeader('Cache-Control', 'max-age=31536000');
+  if (process.env.NODE_ENV !== 'dev') {
+    res.setHeader('Cache-Control', 'max-age=31536000');
+  }
 
+  return next();
+});
+
+app.get('*', (req, res) => {
   res.sendFile(`${__dirname}/src/${decodeURIComponent(req.url)}`);
 });
 
