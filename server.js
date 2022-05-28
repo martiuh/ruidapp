@@ -1,11 +1,9 @@
 const app = require('express')();
 const cors = require('cors');
 const helmet = require('helmet');
-const prerender = require('prerender-node');
 
 app.use(cors());
 app.use(helmet());
-app.use(prerender);
 
 app.use((_, res, next) => {
   // Security
@@ -20,6 +18,8 @@ app.use((_, res, next) => {
   );
 
   if (process.env.NODE_ENV !== 'dev') {
+    res.setHeader('Cache-Control', 'off');
+  } else {
     res.setHeader('Cache-Control', 'max-age=31536000');
   }
 
