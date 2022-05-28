@@ -6,10 +6,11 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "NODE_ENV=dev open-cli http://localhost:1234 && nodemon server.js"
+    "dev": "cross-env NODE_ENV=dev open-cli http://localhost:1234 && nodemon server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "helmet": "^4.2.0",
     "prerender-node": "^3.2.5"
