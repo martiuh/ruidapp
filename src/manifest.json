@@ -1,13 +1,13 @@
 {
-  "name": "HTML Template",
-  "short_name": "HTML Template",
+  "name": "Ruidapp",
+  "short_name": "ruidapp",
   "scope": "/",
   "start_url": ".",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#f0f0f0",
   "theme_color": "#3c3c3c",
-  "description": "Modern HTML Starter Template",
+  "description": "Listen to fun sounds",
   "icons": [
     {
       "src": "./img/icons/64x64.png",
@@ -30,8 +30,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "serviceworker": {
-    "src": "./service-worker.js"
-  }
+  ]
 }
