@@ -49,3 +49,10 @@ body {
 .RuidButton-title {
   margin-bottom: 0;
 }
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1;
+}
