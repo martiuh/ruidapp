@@ -1,34 +1,43 @@
-/* CSS3 */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  scroll-behavior: smooth;
+  --brand-bg: #1b1b3a;
+  --brand-primary: #ff3562;
+  --brand-accent: #f84aa7;
+  --brand-font-color: #a74482;
 
+  --brand-primary--hover: #fc2152;
+}
 body {
-  font-family: "Montserrat", sans-serif;
-  color: #222;
-  text-align: center;
-  min-height: 100vh;
-  max-width: 768px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  background: var(--brand-bg);
+  font-family: sans-serif;
+}
+.logo {
+  background: var(--brand-bg);
+  color: white;
+}
+.RuidButton {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.5rem;
+  background: var(--brand-font-color);
+  border: 2px solid var(--brand-primary);
+  transition: transform 0.6ms ease-in-out;
+  margin: 5vh;
 }
 
-@media (max-width: 636px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  header p {
-    font-size: 1rem;
-  }
-  main h3 {
-    font-size: 1.5rem;
-  }
-  main li {
-    font-size: 1rem;
-  }
+.btn.RuidButton:hover,
+.btn.RuidButton:active,
+.btn.RuidButton:focus {
+  background-color: var(--brand-primary);
+  box-shadow: none;
+}
+
+.btn.RuidButton:focus {
+  outline: 2px dashed red;
 }
