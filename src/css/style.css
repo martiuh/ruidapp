@@ -78,3 +78,10 @@ span.RuidButton-img {
   margin-top: 0.25rem;
   margin-bottom: 0;
 }
+h1{
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1;
+}
