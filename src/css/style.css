@@ -56,11 +56,22 @@ body {
 .RuidButton-picture {
   width: 5em;
   height: 5em;
+  background-color: var(--brand-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
-.RuidButton-img {
+img.RuidButton-img {
   width: 100%;
   height: 100%;
+}
+
+span.RuidButton-img {
+  display: block;
+  font-size: 3.8rem;
 }
 
 .RuidButton-title {
