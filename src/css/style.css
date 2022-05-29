@@ -21,6 +21,20 @@ body {
   background: var(--brand-bg);
   font-family: 'Work Sans', sans-serif;
   background: var(--brand-bg);
+  color: var(--brand-font-color);
+}
+
+a {
+  color: var(--brand-accent);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1;
+  font-weight: 800;
 }
 
 .logo {
@@ -77,12 +91,4 @@ span.RuidButton-img {
 .RuidButton-title {
   margin-top: 0.25rem;
   margin-bottom: 0;
-}
-h1 {
-  text-align: center;
-  color: white;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
-  border: 1;
-  font-weight: 800;
 }

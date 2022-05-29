@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "cross-env NODE_ENV=dev open-cli http://localhost:1234 && nodemon server.js"
+    "dev": "cross-env NODE_ENV=dev open-cli http://localhost:1234 && nodemon server.js",
+    "build": "node ./moveSrc.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

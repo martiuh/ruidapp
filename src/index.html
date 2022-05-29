@@ -122,120 +122,130 @@
 
     <link rel="preload" href="/js/script.js" as="script" />
   </head>
-  <body class="vh-100">
-    <main class="d-flex flex-column justify-content-center align-items-center">
-      <h1>RuidApp</h1>
-      <div class="container">
-        <div class="row row-cols-2 row-cols-md-4 g-4">
-          <div data-ruido="true" class="col">
-            <button
-              disabled
-              type="button"
-              class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
-            >
-              <div class="RuidButton-picture">
-                <span role="img" class="RuidButton-img"> 🚗 </span>
-              </div>
-              <p class="RuidButton-title">Alarma</p>
-            </button>
-            <audio src="/audio/trabar-carro-alarma-auto-.mp3"></audio>
-          </div>
-          <div data-ruido="true" class="col">
-            <button
-              type="button"
-              class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
-              disabled
-            >
-              <div class="RuidButton-picture">
-                <img class="RuidButton-img" src="/img/caballeria-dude.png" />
-              </div>
-              <p class="RuidButton-title">Caballería</p>
-            </button>
-            <audio src="/audio/trompeta.mp3"></audio>
-          </div>
-          <div data-ruido="true" class="col">
-            <button
-              type="button"
-              class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
-              disabled
-            >
-              <div class="RuidButton-picture">
-                <span role="img" class="RuidButton-img"> 👏 </span>
-              </div>
-              <p class="RuidButton-title">Aplausos</p>
-            </button>
-            <audio src="/audio/aplausos.mp3"></audio>
-          </div>
-          <div data-ruido="true" class="col">
-            <button
-              type="button"
-              class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
-              disabled
-            >
-              <div class="RuidButton-picture">
-                <span role="img" class="RuidButton-img">🌯</span>
-              </div>
-              <p class="RuidButton-title">Burro</p>
-            </button>
-            <audio src="/audio/burro.mp3"></audio>
-          </div>
-          <div data-ruido="true" class="col">
-            <button
-              type="button"
-              class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
-              disabled
-            >
-              <div class="RuidButton-picture">
-                <img class="RuidButton-img" src="/img/cricket.png" />
-              </div>
-              <p class="RuidButton-title">Grillo</p>
-            </button>
-            <audio src="/audio/Crickets2.mp3"></audio>
-          </div>
-          <div data-ruido="true" class="col">
-            <button
-              type="button"
-              class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
-              disabled
-            >
-              <div class="RuidButton-picture">
-                <img class="RuidButton-img" src="/img/cucu.jpg" />
-              </div>
-              <p class="RuidButton-title">Cucu</p>
-            </button>
-            <audio src="/audio/reloj-cucu.mp3"></audio>
-          </div>
-          <div data-ruido="true" class="col">
-            <button
-              type="button"
-              class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
-              disabled
-            >
-              <div class="RuidButton-picture">
-                <span class="RuidButton-img" role="img"> 🚨 </span>
-              </div>
-              <p class="RuidButton-title">Sirena</p>
-            </button>
-            <audio src="/audio/sirena-policial.mp3"></audio>
-          </div>
-          <div data-ruido="true" class="col">
-            <button
-              type="button"
-              class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
-              disabled
-            >
-              <div class="RuidButton-picture">
-                <span class="RuidButton-img" role="img"> 👾 </span>
-              </div>
-              <p class="RuidButton-title">Videojuego</p>
-            </button>
-            <audio src="/audio/game-over.wav"></audio>
+  <body>
+    <main
+      class="d-flex flex-column justify-content-between align-items-center"
+      style="height: 100%"
+    >
+      <h1 class="my-md-4 flex-1">RuidApp</h1>
+      <div class="flex-column justify-content-center align-items-center">
+        <div class="container">
+          <div class="row row-cols-2 row-cols-md-4 g-4">
+            <div data-ruido="true" class="col d-flex justify-content-center">
+              <button
+                disabled
+                type="button"
+                class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
+              >
+                <div class="RuidButton-picture">
+                  <span role="img" class="RuidButton-img"> 🚗 </span>
+                </div>
+                <p class="RuidButton-title">Alarma</p>
+              </button>
+              <audio src="/audio/trabar-carro-alarma-auto-.mp3"></audio>
+            </div>
+            <div data-ruido="true" class="col d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
+                disabled
+              >
+                <div class="RuidButton-picture">
+                  <img class="RuidButton-img" src="/img/caballeria-dude.png" />
+                </div>
+                <p class="RuidButton-title">Caballería</p>
+              </button>
+              <audio src="/audio/trompeta.mp3"></audio>
+            </div>
+            <div data-ruido="true" class="col d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
+                disabled
+              >
+                <div class="RuidButton-picture">
+                  <span role="img" class="RuidButton-img"> 👏 </span>
+                </div>
+                <p class="RuidButton-title">Aplausos</p>
+              </button>
+              <audio src="/audio/aplausos.mp3"></audio>
+            </div>
+            <div data-ruido="true" class="col d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
+                disabled
+              >
+                <div class="RuidButton-picture">
+                  <span role="img" class="RuidButton-img">🌯</span>
+                </div>
+                <p class="RuidButton-title">Burro</p>
+              </button>
+              <audio src="/audio/burro.mp3"></audio>
+            </div>
+            <div data-ruido="true" class="col d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
+                disabled
+              >
+                <div class="RuidButton-picture">
+                  <img class="RuidButton-img" src="/img/cricket.png" />
+                </div>
+                <p class="RuidButton-title">Grillo</p>
+              </button>
+              <audio src="/audio/Crickets2.mp3"></audio>
+            </div>
+            <div data-ruido="true" class="col d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
+                disabled
+              >
+                <div class="RuidButton-picture">
+                  <img class="RuidButton-img" src="/img/cucu.jpg" />
+                </div>
+                <p class="RuidButton-title">Cucu</p>
+              </button>
+              <audio src="/audio/reloj-cucu.mp3"></audio>
+            </div>
+            <div data-ruido="true" class="col d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
+                disabled
+              >
+                <div class="RuidButton-picture">
+                  <span class="RuidButton-img" role="img"> 🚨 </span>
+                </div>
+                <p class="RuidButton-title">Sirena</p>
+              </button>
+              <audio src="/audio/sirena-policial.mp3"></audio>
+            </div>
+            <div data-ruido="true" class="col d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn RuidButton d-flex justify-content-center align align-items-center flex-column"
+                disabled
+              >
+                <div class="RuidButton-picture">
+                  <span class="RuidButton-img" role="img"> 👾 </span>
+                </div>
+                <p class="RuidButton-title">Videojuego</p>
+              </button>
+              <audio src="/audio/game-over.wav"></audio>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <footer>
-      <p>Licensed under MIT</p>
+    <footer class="container mt-5 d-flex justify-content-center">
+      <div class="row">
+        <p class="col">
+          Creada el 2022 por el equipo de
+          <a class="text" href="/about-us.html"> A Codear! </a>
+        </p>
+      </div>
     </footer>
     <script src="/js/script.js" type="module"></script>
     <script src="/sw-register.js"></script>
